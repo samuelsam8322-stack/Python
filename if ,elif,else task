@@ -1,0 +1,70 @@
+# 1. check if a number is positive,negative,or zero
+num=int(input("Enter a number: "))
+if num>0:
+    print(f"{num} is positive number")
+elif num<0:
+    print(f"{num} is a negative number")
+else:
+    print(f"{num} is zero")
+
+# 2. Find the greatest of three numbers
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+c=int(input("Enter Third number: "))
+if (a>b) and (a>c):
+    print(f"{a} is greater number")
+elif (b>a) and (b>c):
+    print(f"{b} is greater number")
+else:
+    print(f"{c} is greater number")
+
+# 3. check if number is zero,even or odd
+num = int(input("Enter a number: "))
+if num==0:
+    print(f"{num} is zero.")
+elif num%2==0:
+    print(f"{num} is an even number.")
+else:
+    print(f"{num} is an odd number.")
+
+# 4. Grade calculator;
+num = int(input("Enter your mark in science: "))
+if (num>=90):
+    print("your grade is S")
+elif (num>=80):
+    print("your grade is A")
+elif (num>=70):
+    print("your grade is B")
+elif (num>=60):
+    print("your grade is C")
+elif (num>=50):
+    print("your grade is D")
+else:
+    print("your grade is E and FAIL")
+
+# 5.  Check types of triangle(by sides) Equilateral, Isosceles, Scalene
+a = float(input("Enter The value of a: "))
+b = float(input("Enter The value of b: "))
+c = float(input("Enter The value of c: "))
+if (a==b) and (b==c):
+    print("It is an Equilateral Triangle")
+elif (a==b) or (b==c) or (a==c):
+    print("It is an Isosceles Triangle")
+else:
+    print("It is Scalene Triangle")
+
+# 6. Simple calculator (using only conditions)
+a = float(input("Enter a value: "))
+b = float(input("Enter a value: "))
+operator=input("operators (+,-,*,/): ")
+if operator == "+":
+    print("Result: ",a+b)
+elif operator == "-":
+     print("Result: ",a-b)
+elif operator == "*":
+     print("Result: ",a*b)
+elif operator == "/":
+     print("Result: ",a/b)
+else:
+    print("Invalid Operator!")
+    

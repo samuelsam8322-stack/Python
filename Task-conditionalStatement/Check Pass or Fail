@@ -1,0 +1,6 @@
+num=int(input("Enter your Score: "))
+passmark=50
+if num>=passmark:
+    print(f"{num} You're are PASS")
+else:
+    print(f"{num} You're are FAIL")

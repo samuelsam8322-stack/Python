@@ -1,0 +1,5 @@
+ch=input("Enter an alphabet character: ")
+if ch in ("a,e,i,o,u"):
+    print(f"{ch} is a Vowel").lower()
+else:
+    print(f"{ch} is a Consonent")

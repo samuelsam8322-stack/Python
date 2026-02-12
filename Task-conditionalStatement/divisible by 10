@@ -1,0 +1,5 @@
+num=int(input("Enter a number: "))
+if num % 10==0:
+    print(f"{num} the given number is divisible by 10")
+else:
+    print (f"{num} the given number is not divisibel by 10")

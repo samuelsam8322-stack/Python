@@ -1,0 +1,5 @@
+num=int(input("Enter a number: "))
+if num < 5:
+    print(f"{num} the number is less than 5")
+else:
+    print(f"{num} The number is not less than 5")

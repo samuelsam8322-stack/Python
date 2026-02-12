@@ -1,0 +1,5 @@
+num=int(input("Enter a number: "))
+if 10<=num<=99:
+    print(f"{num} the number is two digit")
+else:
+    print(f"{num} the number is not two digit")
