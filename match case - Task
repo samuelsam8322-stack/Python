@@ -1,0 +1,196 @@
+# 1. Number is odd or even
+num = int(input("Enter a number: "))
+match num % 2:
+    case 0:
+        print(f"{num} is an Even number")
+    case 1:
+        print(f"{num} is an Odd number")
+
+# 2. positive,negative,zero
+num = int(input("Enter a number: "))
+match (num>0,num<0):
+    case (True,False):
+        print(f"{num} is a positive number")
+    case (False,True):
+        print(f"{num} is a negative number")
+    case _:
+        print("The value is Zero")
+
+#3.simple calculator using match case
+a = float(input("Enter value of a: "))
+b = float(input("Enter value of b: "))
+operator = input("operators (+,-,*,/): ")
+match operator:
+    case '+':
+        print("result= ",a + b)
+    case '-':
+        print("result= ",a - b)
+    case '*':
+        print("result= ",a * b)
+    case '/':
+        print("result= ",a + b)
+    case _:
+        print("Invalid")
+
+# 4.to check whether the day is weekday or weekend using match case
+day = str (input("Enter a day: ")).lower()
+match day:
+    case "saturday"|"sunday":
+        print(f"{day} is a weekend")
+    case "monday"|"tuesday"|"wednesday"|"thursday"|"friday":
+        print(f"{day} is a weekday")
+    case _:
+        print("invalid day")
+
+# 5.grading system based on marks. using match case
+mark = int(input("Enter your mark: "))
+match mark:
+    case n if n>=90:
+        print("You're S grade.")
+    case n if n>=80:
+        print("You're A grade.")
+    case n if n>=70:
+        print("You're B grade.")
+    case n if n>=60:
+        print("You're C grade.")
+    case n if n>=50:
+        print("You're D grade.")
+    case n if n>=40:
+        print("You're E grade.")
+    case n if n<39:
+        print("You're FAIL.")
+
+# 6. month name based on a given month number(1-12).using match case
+month = int(input("Enter a month number: "))
+match month:
+    case month if month == 1:
+        print("The month is January")
+    case month if month == 2:
+        print("The month is February")
+    case month if month == 3:
+        print("The month is March")
+    case month if month == 4:
+        print("The month is April")
+    case month if month == 5:
+        print("The month is May")
+    case month if month == 6:
+        print("The month is June")
+    case month if month == 7:
+        print("The month is July")
+    case month if month == 8:
+        print("The month is August")
+    case month if month == 9:
+        print("The month is September")
+    case month if month == 10:
+        print("The month is October")
+    case month if month == 11:
+        print("The month is November")
+    case month if month == 12:
+        print("The month is December")
+    case _:
+        print("Invalid month")
+
+# 7. to check whether the character is a vowel or consonent.using match case
+ch = input("Enter an Alphabet: ").lower()
+match ch:
+    case 'a'|'e'|'i'|'o'|'u':
+        print(f"{ch} is a vowel.")
+    case _:
+        print(f"{ch} is a consonent.")
+
+# 8. traffic signal colour.using match case
+traffic = input("Enter a traffic signal colour: ").lower()
+match traffic:
+    case traffic if traffic == "red":
+        print("The colour RED represents Stop.")
+    case traffic if traffic == "Yellow":
+        print("The colour YELLOW represents Listen.")
+    case traffic if traffic == "green":
+        print("The colour GREEN represents GO.")
+    case _:
+        print("Invalid colour.")
+
+#9. to check leap year. using match case
+year = int(input("Enter the Total no. of days in february: "))
+match year:
+    case 28:
+        print("This is non-leap year.")
+    case 29:
+        print("This is a leap year.")
+    case _:
+        print("Default days")
+
+# 10. to categorize a person based on age group.using match case
+age = int(input("Enter your age: "))
+match age:
+    case age if age <13:
+        print("Your a child.")
+    case age if age <18:
+        print("Your a Teen.")
+    case age if age <60:
+        print("Your a Adult.")
+    case _:
+        print("Your a Senior citizen.")
+
+# 11. To check the number lies between 1 and 10. using match case
+num=int(input("Enter a number: "))
+match num:
+    case num if num <=10:
+        print("This number lies between 1 and 10")
+    case _:
+        print("This number doesn't lies between 1 and 10.")
+
+# 12. to program to validate a username and password
+userName = "sam"
+passWord = "sam83"
+userInput= str(input("Enter userName: "))
+passwordInput=str(input("Enter a passWord: "))
+match (userInput,passwordInput):
+    case("sam","sam83"):
+        print("Login Successful!")
+    case("sam",_):
+        print("Incorrect password")
+    case _:
+        print("Login Invalid")
+
+#13.To identify a shapes name based on the number of sides.using match case
+sides = int(input("Enter a number of sides: "))
+match sides:
+    case 0:
+        print("It is a circle or Oval")
+    case 3:
+        print("It is Triangle")
+    case 4:
+        print("It is Quadrilateral")
+    case 5:
+        print("It is Pentagon")
+    case 6:
+        print("It is hexagon")
+    case 7:
+        print("It is Heptagon")
+    case 8:
+        print("It is octagon")
+    case _:
+        print("Invalid shapes")
+
+# 14. number is divisible by 3 and 5 
+num=float(input("Enter a number(divisible by 3 and 5): "))
+match num:
+    case num if (num%3,num%5) == 0:
+        print(f"{num} is divisible by 3 and 5")
+    case _:
+        print(f"{num} is not divisible by 3 and 5")
+
+# 15. To classify a number as positive even, positive odd, negative or zero.using match case
+num=int(input("Enter a number: "))
+match num:
+    case num if (num>0)and(num%2==0):
+        print(f"{num} is a positive Even number")
+    case num if (num>0)and(num%2==1):
+        print(f"{num} is a positive Odd number")
+    case num if num<0:
+        print(f"{num} is Negative number")
+    case num if num==0:
+        print("The value is Zero")
+    case _:
+        print("Number Ivalid")
