@@ -1,0 +1,157 @@
+# String task with if-else and looping
+ 
+# # 1. To count the number of vowels in a given string
+# text = input("Enter a string:")
+# vowel_count=0
+# for char in text:
+#     lower_char=char.lower()
+#     if lower_char=='a' or lower_char=='e' or lower_char=='i' or lower_char=='o' or lower_char=='u':
+#         vowel_count += 1
+#     else:
+#         pass
+#     print("Enter the vowels in the string:",vowel_count)  
+
+# # 2. To reverse a string using a loop(Without using slicing)
+# text = "sam"
+# reversed_text = ""
+# for char in text:
+#     reversed_text = char + reversed_text
+# print(reversed_text)
+
+# # 3.  To check if a string is a palindrome using a loop.
+# text = "dad"
+# reversed_text = ""
+# for char in text:
+#     reversed_text = char + reversed_text
+# if text == reversed_text:
+#     print("Palindrome")
+# else:
+#     print("Not a palindrome")
+
+# # 4. To count the number of uppercase and lowercase letters in a string
+# text = "Hello World"
+# upper_count = 0
+# lower_count = 0
+# for char in text:
+#     if char.isupper():
+#         upper_count += 1
+#     elif char.islower():
+#         lower_count += 1
+# print("Uppercase letters:", upper_count)
+# print("Lowercase letters:", lower_count)
+
+# # 5.To remove all spaces from a string without using built-in replace().
+# text = "Hello World Python"
+# result = ""
+# for char in text:
+#     if char != " ":
+#         result += char
+# print(result)
+
+# # 6. To find the frequency of each character in a string 
+# text = "Samuelstack"
+# frequency = {}
+# for char in text:
+#      if char in frequency:
+#         frequency[char] +=1
+#      else:
+#         frequency[char] = 1
+# for key,value in frequency.items():
+#     print(key,":",value)
+
+# # 7. To count how many digits are present in a string
+# text = "7339003722"
+# count = sum(1 for char in text if char.isdigit())
+# print(count)
+
+# # 8. To check if a string contains only alphabetic character"
+# text = input("Enter a word: ")
+# if text != "" and all(('a' <= ch <= 'z') or ('A' <= ch <= 'Z') for ch in text):
+#     print("The string contains only alphabetic characters.")
+# else:
+#     print("The string contains non-alphabetic characters.")
+
+# # 9.To convert all lowercase str into uppercase manually using ASCII values
+    
+
+# # 10. To print all characters located at even incides of a string
+# text = "Hello World"
+# print(text[0::2])
+# # 0r
+# text = "Hello World"
+# for i in range(0,len(text),2):
+#     print(text[i],end="")
+
+# # 11.to count the number of words in a string without using split()
+# text = "Hello world this is Python"
+# count=0
+# in_word = False 
+# for char in text:
+#     if char !=" " and not in_word:
+#         count+=1
+#         in_word = True
+#     elif char ==" ":
+#         in_word = False
+# print("Number of Words: ",count)
+
+# # 12. To replace all vowels in a string with * using a loop
+# text = input("Enter a string: ").lower()
+# vowels ="aeiou"
+# result=""
+# for char in text:
+#     if char in vowels:
+#         result+='*'
+#     else:
+#         result+= char
+# print("Modified string: ",result)
+
+# # 13. to find longest word in a sentence
+# sentence = input("Enter a sentence: ")
+# words=sentence.split()
+# longest_word=""
+# for word in words:
+#     if len(word)>len(longest_word):
+#         longest_word = word
+# print("Longest word: ",longest_word)
+
+# # 14. to check whether two strings are anagrams of each other using loop
+
+# # 15. To count how many special characters are present in a string 
+# text = input("Enter a string: ")
+# count = 0
+# for char in text:
+#     if not char.isalnum() and not char.isspace():
+#         count += 1
+# print("Number of special characters: ",count)
+
+# # 16. To print each character of a string a given number of times
+# text = input("Enter a word:")
+# n = int(input("Enter a number of times to repeat each character:"))
+# for char in text:
+#     print(char * n)
+# # 17. To remove duplicate characters from a string using loops
+# text = "Hello World"
+# result=""
+# for ch in text:
+#     if ch not in result:
+#         result+=ch
+# print(result)
+
+# # 18.write a program to count the number of consonents in given string
+# string = input("Enter a string: ")
+# count = 0
+# for ch in string:
+#     if ch.isalpha() and ch.lower() not in "aeiou":
+#         count += 1
+# print("Number of consonants:", count)
+
+# # 19. To capitalize the first leter of a string manually(without using capitalize())
+# text = input("Enter a string: ")
+# if text:
+#     print(text[0].upper() + text[1:])
+
+# 20. To print character of a string until a vowel is encountered
+text = input("Enter a string: ")
+for ch in text:
+    if ch in "aeiouAEIOU":
+     print(ch, end="")
