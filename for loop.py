@@ -102,7 +102,20 @@ result = 1
 for _ in range(exponent):  
     result *= base         
     print(f"{base}^{exponent} =", result)
+
+
 #19. to check if a number is prime or not ,using for loop
+num = int(input("Enter a number: "))
+if num <= 1:
+    print("Not a Prime Number")
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not a Prime Number")
+            break
+    else:
+        print("Prime Number")
+
   
 # 20. to print a right triangle star pattern 
 rows =  5

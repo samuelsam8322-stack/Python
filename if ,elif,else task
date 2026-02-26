@@ -27,7 +27,7 @@ elif num%2==0:
 else:
      print(f"{num} is an odd number.")
 
-# # 4. Grade calculator;
+# 4. Grade calculator;
 num = int(input("Enter your mark in science: "))
 if (num>=90):
      print("your grade is S")
@@ -42,7 +42,7 @@ elif (num>=50):
 else:
      print("your grade is E and FAIL")
 
-# 5.  Check types of triangle(by sides) Equilateral, Isosceles, Scalene
+# 5.To Check types of triangle(by sides) Equilateral, Isosceles, Scalene
 a = float(input("Enter The value of a: "))
 b = float(input("Enter The value of b: "))
 c = float(input("Enter The value of c: "))
