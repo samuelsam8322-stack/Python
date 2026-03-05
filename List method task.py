@@ -109,7 +109,7 @@ myList = [5,15,20,35,45,50,60,70]
 for i in myList:
     if i == 50:
         break
-print (i)
+    print (i)
 
 # 17. write a python program to count how many numbers in a list are divisible by 5.
 myList = [ 5,15,23,59,50,75,98]
