@@ -1,4 +1,4 @@
-#1.Count Frequency of Elements Given a list, create a dictionary that stores the frequency of each element.
+# 1.Count Frequency of Elements Given a list, create a dictionary that stores the frequency of each element.
 numbers = [1,2,2,3,3,3,4]
 freq = {}
 for i in numbers:
