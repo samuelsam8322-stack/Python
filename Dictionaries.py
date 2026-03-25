@@ -1,7 +1,7 @@
-# dictionary data types: dict{} constructor
-# Ordered, mutuable, Doesn't allow duplicates
-# key doesn't repeat,Values may repeat.
-# {key:value} structured
+# # dictionary data types: dict{} constructor
+# # Ordered, mutuable, Doesn't allow duplicates
+# # key doesn't repeat,Values may repeat.
+# # {key:value} structured
 
 student = {"name":"sam","age":24,"City":"London"}
 print(student["name"])
@@ -13,7 +13,7 @@ print(student.get("Phone"))
 student['age'] = 21
 
 # 2. Update:
-#student.update(['Course'':BCA'])
+student.update({'Course'':BCA'})
 
 # 3. pop:
 student.pop('age')
@@ -75,3 +75,26 @@ for student in students:
 for student in students:
     print(student["rank"], student["name"], student["total"])
 
+# students = [
+# {"name":"Stark","marks":[78,96,93,98,88]},
+# {"name":"Thor","marks":[90,91,100,98,75]},
+# {"name":"Loki","marks":[100,96,94,98,100]},
+# {"name":"Strange","marks":[90,94,99,98,85]},
+# {"name":"Wanda","marks":[90,96,90,88,100]}
+# ]
+
+# for i in students:
+#     i["total"]=sum(i["marks"]) 
+   
+# n= len(students)
+# for i in range(n):
+#     for j in range(0, n -i -1):
+#         if students[j]['total'] < students[j+1]['total']:
+#             temp = students[j]
+#             students[j] = students[j+1]
+#             students [j+1] = temp
+
+# rank = 1
+# for student in students:
+#     print("rank",rank,":",student['name'],':',student['total'])
+#     rank = rank +1
