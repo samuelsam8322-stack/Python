@@ -89,3 +89,50 @@ def f1 (c,*a):
     print(c)
 
 f1 (1,2,3,4,5)
+
+# Arbitary keyword arguement:
+
+
+#         It lets a function accept a variable number of named (key=value)arguements
+#         (**kwargs) - collects keyword arguements in a dictionary.
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+
+display_info(name="Alice", age=25, city="Chennai")
+
+
+# LAMBDA Function:
+#         It is small anonymous(unnamed)function defined in a single line using the 
+# lambda function.
+
+#           lambda  arguements : expression.
+#  * can have any number of arguements.
+#  * only one expression.
+#  * (no return explicit).
+add = lambda a,b,c : a + b + c
+print(add)
+
+
+# RETURN function :
+#           return keyword is used inside a function to send a result back to the 
+# caller and exit the function.
+def add (a,b):
+    return (a+b)
+result = add(3,4)
+print(result)
+
+
+# RECURSIVE function:
+#        The process in which a function calls itself directly and indirectly is called 
+# recursion.
+
+def factorial (n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial ( n - 1)
+    
+result = factorial (5)
+print(f"the factorial of 5 is {result}")
+
