@@ -53,3 +53,51 @@
 #            compile time.
 # Exceptions :Problems that occurs at runtime and can be managed using exception handling
 #             (eg: invalid input, missing files).
+
+
+# Types of runtime error:
+
+# 1. ZeroDivisionError
+x = 10 / 0
+
+# 2.NameError - Occurs when a variable is not defined.
+print(a)   
+
+# 3.TypeError - Occurs when operations are performed on incompatible types.
+x = "10" + 5
+
+# 4.ValueError - Occurs when a function gets the correct type but invalid value.
+int("abc")
+
+# 5.IndexError - Occurs when accessing an invalid index in a list.
+lst = [1, 2, 3]
+print(lst[5])
+
+# 6.KeyError -Occurs when accessing a non-existing key in a dictionary.
+d = {"a": 1}
+print(d["b"])
+
+# 7.AttributeError - Occurs when an invalid attribute is used.
+x = 10
+x.append(5)
+
+# 8.ImportError - Occurs when a module cannot be imported.
+import non_existing_module
+
+# 9.FileNotFoundError - Occurs when a file is not found.
+open("file.txt")
+
+# 10.OverflowError - Occurs when a number exceeds limits.
+import math
+math.exp(1000)
+
+
+
+# Example Handling Runtime Error
+try:
+    x = int(input("Enter number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Invalid input!")
