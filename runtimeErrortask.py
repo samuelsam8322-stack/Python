@@ -21,7 +21,7 @@ try:
 except ValueError:
     print("Value Error, input a valid integer")
 
-# 3.Write a Python program that opens a file and handles a FileNotFoundError
+#3.Write a Python program that opens a file and handles a FileNotFoundError
 # exception if the file does not exist.
 def open_file(filename):
     try:
@@ -52,18 +52,16 @@ print("The product of given two numerical value is:",result)
 
 # 5.Write a Python program that opens a file and handles a PermissionError exception
 # if there is a permission issue.
-# Define a function named open_file that takes a filename as a parameter.
-
 def open_file(filename):
     try:
-        with open(filename, 'w') as file:
+        with open(filename, 'r') as file:
             contents = file.read()
             print("File contents:")
             print(contents)
     except PermissionError:
         print("Error: Permission denied to open the file.")
 
-file_name = input("Input a file name: ")
+file_name = str(input("Input a file name:"))
 open_file(file_name)
 
 # 6.Write a Python program that executes an operation on a list and handles an IndexError 
