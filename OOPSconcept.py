@@ -324,4 +324,22 @@ print("Salary:",emp.get_salary())       # getter
 emp.set_salary(1400000)
 print("Updated Salary:",emp.get_salary())       # setter
 
-        
+
+# ABSTRACTION:
+#       It means hiding unnecessary details and showing only important things.
+
+# Real Life Examples: AC remote-> you press ON button, AC turns ON.
+
+from abc import ABC, abstractmethod
+
+class shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(shape):
+    def area(self):
+        print("Area = Lenght * Breadth")
+
+obj = Rectangle()
+obj.area()
